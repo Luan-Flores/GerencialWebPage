@@ -113,6 +113,7 @@
         & a{
             background-color: rgb(0, 30, 56);
             color: white;
+            width: 100%;
         }
     }
     
