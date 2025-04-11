@@ -28,7 +28,7 @@
     margin-left: 240px;
 }
 .menu{
-    margin-inline: 200px 180px;
+    margin-inline: 200px 200px;
 }
 
 .box-item{
@@ -39,28 +39,30 @@
     margin-left: 20px;
 }
 #btn-agendar {
-  background: #3F4494;
-  border-radius: 999px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 4px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  height: 34px;
-  word-break: break-word;
-  border: 0;
-  transition: color 0.3s ease-out;
-  transition-delay: 0.05s;
-
+    background: #36429f;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 9px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: 34px;
+    word-break: break-word;
+    border: 0;
+    transition: color 0.3s ease-out;
+    transition-delay: 0.05s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   &:hover{
     box-shadow: #5E5DF0 0 8px 20px -10px;
     transition-delay: 0.05s;
@@ -102,7 +104,7 @@
 
 #box-logo{
     width: 20%;
-    margin-right: 90px;
+    margin-right: 120px;
 }
 
 .nav-list{
@@ -121,6 +123,9 @@
     & h1{
         color: white;
     }
+}
+#checkedIcon{
+    width: 18px;
 }
 #box-btn-hamburguer{
     display: none;
