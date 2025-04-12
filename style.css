@@ -18,8 +18,8 @@
     transition: box-shadow 0.3s ease-in-out;
     background-color: white;
     box-shadow: 0 0 10px 0 rgba(211.49999999999997,211.49999999999997,211.49999999999997,.5);
-    position: fixed;
-    z-index: 1;
+    /* position: fixed; */
+    z-index: 1000;
     width: 100%;
 }
 .cabecalho-logo{
@@ -104,7 +104,7 @@
 
 #box-logo{
     width: 20%;
-    margin-right: 120px;
+    margin-right: 290px;
 }
 
 .nav-list{
@@ -114,12 +114,12 @@
 }
 .main{
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    /* height: 100vh; */
+    /* margin-top: 70px; */
 }
 .first-page{
     background-color: #5ebeff;
-    height: 70vh;
-
+    position: relative;
     & h1{
         color: white;
     }
@@ -127,6 +127,182 @@
 #checkedIcon{
     width: 18px;
 }
+.first-img-box{
+    /* width: 100vh; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 671px;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.firstText{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    & h1{
+        color: #0f1ab9;
+    }
+}
+.subText{
+    width: 420px;
+}
+.entre{
+    height: 645px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    & h1{
+        color: #0e2281;
+        margin-top: 20px;
+        font-size: 42px;
+        letter-spacing: -2px;
+        width: 1200px;
+    }
+    & #textDes{
+        color: #FFCB15;
+    }
+    & #strAlba{
+        color: #0e2281;
+    }
+    & .cardEntreBox{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    & .cardEntre{
+        background-color: #ffffff;
+        width: 400px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        & .strCardEntre{
+            width: 82%;
+        }
+    }
+    }
+    
+}
+.second-page{
+    
+    height: 1000px;
+    background-color: #040514;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    & h1{
+        margin-top: 30px;
+        color: white;
+        font-size: 50px;
+    }
+    & #textDes2 {
+        color: #ffca18;
+    }
+
+    & #textDes1{
+        color: #ffe600;
+    }
+}
+.btnCom2{
+    background: #FFCB15;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 9px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: 44px;
+    word-break: break-word;
+    border: 0;
+    transition: color 0.3s ease-out;
+    transition-delay: 0.05s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: #000000 0 8px 20px -10px;
+    &:hover{
+        transition-delay: 0.05s;
+        color: #272727;
+      }
+    }
+.card-box{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 92px;
+    & .card{
+        background-color: #1a1b2e;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        position: relative;
+    }
+    & .titleCard{
+        color: #00b62d;
+        border-bottom: 1px solid #00b62d;
+        position: absolute;
+        top: 20px;
+        /* left: 20px; */
+    }
+    & #estoque-card{
+        color: #0897E9;
+        border-bottom: 1px solid #0897E9;
+    }
+    
+    & #crm-card{
+        color: #FF6565;
+        border-bottom: 1px solid #FF6565;
+    }
+    & #nfe-card{
+        color: #FF9C27;
+        border-bottom: 1px solid #FF9C27;
+    }
+
+    & .strCard{
+        color: rgb(247, 247, 247);
+        font-size: 17px;
+        width: 340px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #box-btn-hamburguer{
     display: none;
 }
