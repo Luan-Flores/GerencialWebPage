@@ -4,7 +4,33 @@ const navList = document.querySelector(".nav-list");
 // Adiciona evento de clique no botão hamburguer para alternar o menu
 btnHamburguer.addEventListener('click', function(evento) {
     evento.preventDefault();
-
     navList.classList.toggle('ativo');
     btnHamburguer.classList.toggle('ativo');
 });
+
+const observer = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada, index) => {
+      if (entrada.isIntersecting) {
+        setTimeout(() => {
+          entrada.target.classList.add('visivel');
+        }, index * 370); // 300ms entre cada card
+      } else {
+        entrada.target.classList.remove('visivel');
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+  
+  document.querySelectorAll('.ave-box').forEach(el => {
+    observer.observe(el);
+  });
+  document.querySelectorAll('.ave-title').forEach(el => {
+    observer.observe(el);
+  });
+  document.querySelectorAll('.cardEntre').forEach(el => {
+    observer.observe(el);
+  });
+
+
+  
