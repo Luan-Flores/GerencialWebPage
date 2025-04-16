@@ -492,7 +492,7 @@
     }
     .card-box{
         grid-template-columns: repeat(3, 1fr);
-        gap: 52px;
+        gap: 32px;
     }
     #txtSAlba{
         width: fit-content;
