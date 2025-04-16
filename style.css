@@ -131,7 +131,7 @@
     align-items: center;
     flex-direction: column;
     & #ave-albatroz{
-        width: 800px;
+        width: 100%;
         height: auto;
     }
     & .ave-title{
@@ -185,6 +185,7 @@
   .ave-box.visivel {
     opacity: 1;
     transform: translateY(0);
+    width: 91.146%;
   }
   .ave-title{
       opacity: 0;
@@ -371,7 +372,7 @@
         & .box-frs{
             position: absolute;
             top: 20px;
-            left: 60px;
+            left: 13%;
             width: 300px;
             display: flex;
             flex-direction: row;
@@ -637,7 +638,7 @@
     .frs-pagina {
         gap: 85px;
         #ave-albatroz{
-            width: 700px;
+            width: 100%;
         }
         & .ave-title {
             & h1 {
@@ -681,11 +682,22 @@
     .box-item{
         gap: 0;
     }
+    .card-box{
+        & .card{
+            & .box-frs{
+                left: 7%;
+                & .icon-card{
+                    left: 8%;
+                }
+            }
+        } 
+    }
+    
     #txtSAlba{
         width: auto;
     }.frs-pagina{
         & #ave-albatroz{
-            width: 400px;
+            width: 100%;
         }
         & .ave-title {
             & h1 {
@@ -706,5 +718,11 @@
 @media screen and (max-width: 375px) {
     .box-item{
         margin: 0;
+    }
+    .frs-pagina{
+
+        & #ave-albatroz{
+            width: 100%;
+        }
     }
 }
