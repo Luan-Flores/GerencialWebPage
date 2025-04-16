@@ -368,9 +368,32 @@
         gap: 12px;
         border-radius: 20px;
         position: relative;
+        & .box-frs{
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            /* gap: 12px; */
+            & .icon-card{
+                width: 40px;
+                position: absolute;
+                right: 93%;
+            }
+            & .box-frs-fi{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            position: relative;
+        }
+        }
         & #btn-func{
-            background-color: #434343;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 14px;
             &:hover{
                 box-shadow: #000000 0px 0px 6px 0px;
                 transition-delay: 0.05s;
@@ -385,18 +408,15 @@
     & .titleCard{
         color: #00b62d;
         border-bottom: 1px solid #00b62d;
-        position: absolute;
-        top: 20px;
-        /* left: 20px; */
     }
     & #estoque-card{
-        color: #0897E9;
-        border-bottom: 1px solid #0897E9;
+        color: #FF6565;
+        border-bottom: 1px solid #FF6565;
     }
     
     & #crm-card{
-        color: #FF6565;
-        border-bottom: 1px solid #FF6565;
+        color: #00BFB7;
+        border-bottom: 1px solid #00BFB7;
     }
     & #nfe-card{
         color: #FF9C27;
@@ -410,7 +430,7 @@
     & .strCard{
         color: rgb(247, 247, 247);
         font-size: 17px;
-        width: 340px;
+        width: 300px;
         
     }
 }
