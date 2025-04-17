@@ -7,6 +7,21 @@ btnHamburguer.addEventListener('click', function(evento) {
     navList.classList.toggle('ativo');
     btnHamburguer.classList.toggle('ativo');
 });
+let lastScrollY = window.scrollY;
+const header = document.getElementsByClassName("cabecalho")[0];
+console.log(header[0])
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // Rolando para baixo: esconde
+    header.style.top = "-70px";
+  } else {
+    // Rolando para cima: mostra
+    header.style.top = "0";
+  }
+  lastScrollY = window.scrollY;
+});
+
 
 const observer = new IntersectionObserver((entradas) => {
     entradas.forEach((entrada, index) => {

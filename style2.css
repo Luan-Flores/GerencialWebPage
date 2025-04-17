@@ -221,31 +221,49 @@ html {
                     border-bottom: 2px solid black;
                 }
                 }
-                & #li-adm{
-                    color: #1A67BF;
+                & #li-dfe{
                     border-color: #1A67BF;
-                }
-                & #li-crm{
-                    border-color: #d61500;
                     & a{
-                        color: #d61500;
+                        color: #1A67BF;
+                    }
+                }
+                & #li-adm{
+                    border-color: #1A67BF;
+                    & a{
+                        color: #1A67BF;
+                    }
+                }
+                & #li-vendas{
+                    border-color: #ffbe0c;
+                    & a{
+                        color: #ffbe0c;
                     }
                 }
                 & #li-financeiro{
-                    color: #00B62D;
                     border-color: #00B62D;
+                    & a{
+                        color: #00B62D;
+                    }
                 }
                 & #li-estoque{
-                    color: #ffbe0c;
-                    border-color: #ffbe0c;
+                    border-color: #f93737;
+                    & a{
+                        color: #f93737;
+                    }
                 }
                 & #li-compras{
-                    color: #114a8b;
+                    
                     border-color: #114a8b;
+                    & a{
+                        color: #114a8b;
+                    }
                 }
-                & #li-vendas{
-                    color: #1A67BF;
+                & #li-adm{
+                    
                     border-color: #1A67BF;
+                    & a{
+                        color: #1A67BF;
+                    }
             }
         }
     }
@@ -284,7 +302,31 @@ html {
             & h1{
                 border-bottom: 2px solid #1A67BF;
             }
-            
+        }
+        & #title-estoque{
+            color: #f93737;
+            & h1{
+                border-bottom: 2px solid #f93737;
+            }
+        }
+        & #title-financeiro{
+            color: #00B62D;
+            & h1{
+                border-color: #00B62D;
+            }
+        }
+        & #title-vendas{
+            color: #FFBE0C;
+            & h1{
+                border-color: #FFBE0C;
+            }
+        }
+        }
+        & #title-dfe{
+            color: #1A67BF;
+            & h1{
+                border-color: #1A67BF;
+            }
         }
             
         & .box-itens{
@@ -309,6 +351,7 @@ html {
             display: flex;
             flex-direction: column;
             position: relative;
+            gap: 12px;
             & .titulo-itens{
                 margin-left: 12px;
             }
@@ -320,11 +363,29 @@ html {
                 width: 5px;
                 background-color: #1A67BF;
             }
+            & .bfr-dfe::before{
+                background-color: #1A67BF;
+            }
+            & .bfr-estoque::before{
+                background-color: #f93737;
+            }
+            & .bfr-financeiro::before{
+                background-color: #00B62D;
+            }
+            & .bfr-vendas::before{
+                background-color: #FFBE0C;
+            }
+            & .bfr-compras::before{
+                background-color: #114A8B;
+            }
+            & .bfr-adm::before{
+                background-color: #1A67BF;
+            }
             & .subTitulo-itens{
                 width: 500px;
             }
             
         }
     }
-}
+
 
