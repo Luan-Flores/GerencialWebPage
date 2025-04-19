@@ -14,6 +14,7 @@
 .cabecalho{
     display: flex;
     height: 70px;
+    justify-content: center;
     top: 0;
     left: 0;
     position: fixed;
@@ -28,7 +29,6 @@
 .cabecalho-logo{
     width: 160px;
     height: auto;
-    margin-left: 240px;
 }
 .menu{
     margin-inline: 200px 200px;
@@ -57,7 +57,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: fit-content;
+    width: max-content;
     height: 34px;
     word-break: break-word;
     border: 0;
@@ -107,7 +107,8 @@
 
 #box-logo{
     width: 20%;
-    margin-right: 290px;
+    margin-right: 8rem;
+    margin-left: 2rem;
 }
 
 .nav-list{
@@ -520,11 +521,11 @@
     #box-logo {
         width: 20%;
         margin-right: 190px;
+        margin-left: 2rem;
     }
     .cabecalho-logo {
         width: 160px;
         height: auto;
-        margin-left: 140px;
     }
     .first-img-box{
         height: 435px;
