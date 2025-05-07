@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    font-family: "Poppins", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-style: none;
+}
+
+.container-ftr{
+    margin-inline: 15%;
+}
+.box-logo-ftr-a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* .first-ftr{
+    display: flex;
+    padding-block: 5rem;
+    justify-content: center;
+    gap: 2vh;
+    justify-items: center;
+} */
+.ftr-box{
+    width: 13rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    & h3{
+        font-size: 23px;
+        line-height: 48px;
+        text-align: center;
+    }
+    & p{
+        font-size: 0.9rem;
+        margin-top: 4%;
+        text-align: center;
+    }
+}
+.ftr-box-fake{
+    display: none;
+}
+.box-logo-ftr{
+    width: 80%;
+    & .logo-ftr{
+        width: 100%;
+    }
+}
+#h3-redes{
+    text-align: center;
+}
+.ftr-box1{
+    display: flex;
+    align-items: center;
+}
+.ftr-box-3-a{
+    & p{
+        color: #000000;
+    }
+}
+.box-redes{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    & .logo-rede{
+        width: 25px;
+        height: 25px;
+    }
+    & .logo-rede-a{
+        height: 25px;
+        & :hover{
+            transform: scale(1.05);
+        }
+    }
+}
+.copy{
+    border-top: 1px solid #a0a0a0;
+    padding-block: 3rem;
+    text-align: center;
+    color: #3b3b3b;
+}
+.bfr-ftr{
+    background-color: #161a37;
+    display: flex;
+    /* height: 65vh; */
+    padding: 120px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    & h1{
+        color: #f9ff00;
+        width: 80%;
+        font-size: 2rem;
+    }
+    & h3{
+        color: white;
+        font-size: 1rem;
+    }
+    & .bfr-ftr-btn{
+        padding: 12px 30px;
+        border-radius: 20px;
+        border: transparent;
+        font-family: 'Abel';
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: inherit;
+        background-color: #005f18;
+        color: white;
+        transition: color 0.3s ease-out;
+        &:hover{
+            box-shadow: #00f40a 0px 0px 20px -10px;
+            transition-delay: 0.05s;
+        }
+    }
+}
+.first-ftr{
+    display: grid;
+    padding-block: 5rem;
+    justify-content: center;
+    gap: 2vh;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.first-ftr > *:nth-child(4) {
+    grid-column: 2 / 3; /* Posiciona o 4º card na coluna do meio */
+  }
+@media screen and (max-width: 768px){
+    .first-ftr{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 425px){
+    .first-ftr{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first-ftr > *:nth-child(4) {
+        grid-column:auto; /* Posiciona o 4º card na coluna do meio */
+      }
+}
