@@ -3,7 +3,7 @@ header{
     font-family: Staatliches, sans-serif;
     background-color: white;
     padding-block: 20px;
-    height: 180px;
+    height: 7vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 10px;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: center;
     & .hdr-box-logo{
-        width: 14vw;
+        width: 11vw;
         height: auto;
         transition: transform 0.4s ease, color 0.3s ease;
         & .hdr-a-logo{
@@ -31,7 +31,8 @@ header{
             align-items: center;
             gap: 3vw;
             transform: scale(1);
-            font-size: 1.520vw;
+            /* font-size: 1.52vw; */
+            font-size: 1.32vw;
             letter-spacing: 2px;
             color: rgb(31 62 119);
             
@@ -49,4 +50,9 @@ header{
         }
     }
     
+}
+@media screen and (max-width: 1440px){
+    .hdr-box-logo{
+        width: 10vw;
+    }
 }
