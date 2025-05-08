@@ -34,7 +34,7 @@ const observer = new IntersectionObserver((entradas) => {
       }
     });
   }, {
-    threshold: 0.4
+    threshold: 0.3
   });
   
   document.querySelectorAll('.ave-box').forEach(el => {

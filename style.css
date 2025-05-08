@@ -1,35 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 * {
-    font-family: "Poppins", Sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
-    font-style: none;
+    text-decoration: none;
 }
-
-.cabecalho{
-    display: flex;
-    height: 70px;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    position: fixed;
-    align-items: center;
-    transition: box-shadow 0.3s ease-in-out;
-    background-color: white;
-    box-shadow: 0 0 10px 0 rgba(211.49999999999997,211.49999999999997,211.49999999999997,.5);
-    /* position: fixed; */
-    z-index: 1000;
-    width: 100%;
-}
-.cabecalho-logo{
-    width: 160px;
-    height: auto;
+body{
+    font-family: "Poppins", Sans-serif;
 }
 .menu{
     margin-inline: 200px 200px;
@@ -45,13 +23,14 @@
 }
 .btn-agendar {
     background: #000F7E;
-    border-radius: 999px;
+    border-radius: 11px;
+    font-family: Staatliches, sans-serif;
     box-sizing: border-box;
+    letter-spacing: 1px;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    /* font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif; */
     font-size: 16px;
-    font-weight: 700;
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
@@ -68,10 +47,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
-  &:hover{
-    box-shadow: #5E5DF0 0 8px 20px -10px;
-    transition-delay: 0.05s;
-  }
+    &:hover{
+        box-shadow: #5E5DF0 0 8px 20px -10px;
+        transition-delay: 0.05s;
+    }
 }
 .item-menu {
     position: relative;
@@ -81,31 +60,31 @@
     text-decoration: none;
     transition: color 0.3s ease-out;
     transition-delay: 0.05s; 
-  
+    
     &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 2px;
-      background-color: #0f1ab9;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease-out;
-      transition-delay: 0.05s;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #0f1ab9;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-out;
+        transition-delay: 0.05s;
     }
-  
+    
     &:hover {
-      color: #1d27b4;
-      transition-delay: 0s;
-  
-      &::after {
-        transform: scaleX(1);
+        color: #1d27b4;
         transition-delay: 0s;
-      }
+        
+        &::after {
+            transform: scaleX(1);
+            transition-delay: 0s;
+        }
     }
-  }
+}
 
 #box-logo{
     width: 20%;
@@ -125,7 +104,6 @@
 }
 .frs-pagina{
     height: 800px;
-    margin-top: 70px;
     content: "";
     background-image: radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
     display: flex;
@@ -153,10 +131,10 @@
                 color: #000f7e;
                 font-weight: 780;
             }
-            }
+        }
         & p{
-        font-size: 17px;
-        color: #344253;
+            font-size: 17px;
+            color: #344253;
         }
     }    
 }
@@ -164,9 +142,9 @@
     opacity: 0;
     transform: translateY(100%);
     /* animation: subirAnimacao 1s ease-out forwards; */
-  }
+}
 /*   
-  @keyframes subirAnimacao {
+@keyframes subirAnimacao {
     0% {
       opacity: 0;
       transform: translateY(100%);
@@ -330,13 +308,12 @@
 }
 .btnCom2{
     background: #e5b50a;
-    border-radius: 999px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    border-radius: 11px;
+    font-family: Staatliches, sans-serif;
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
@@ -627,11 +604,12 @@
     }
     & .bfr-ftr-btn{
         padding: 12px 30px;
-        border-radius: 20px;
+        border-radius: 11px;
+        font-family: Staatliches, sans-serif;
+        letter-spacing: 1px;
         border: transparent;
-        font-family: 'Abel';
         font-size: 1rem;
-        font-weight: 500;
+        /* font-weight: 500; */
         text-decoration: inherit;
         background-color: #005f18;
         color: white;
