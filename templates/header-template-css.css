@@ -10,7 +10,7 @@ header{
     font-family: Staatliches, sans-serif;
     background-color: white;
     padding-block: 20px;
-    height: 7vw;
+    height: 13vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 10px;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@ header{
 }
 
 #box-btn-hamburguer{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 4px;
@@ -109,7 +109,10 @@ header{
     }
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1024px){
+    header{
+        height: 100px;
+    }
 }
 @media screen and (max-width: 991px){
     .hdr-ul{
@@ -117,13 +120,15 @@ header{
             display: none;
         }
     }
+    #box-btn-hamburguer{
+        display: flex;
+    }
     .pai-box{
+        gap: 43vw;
         & .hdr-box-logo{
             width: 210px;
         }
-        & .hdr-nav{
-            /* gap: 59vw; */
-        }
+    
 
     }
     header{

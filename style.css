@@ -428,37 +428,6 @@ body{
 }
 
 
-#box-btn-hamburguer{
-    display: none;
-}
-#btn-hamburguer{
-    background: transparent;
-    border: none; 
-}
-#box-btn-hamburguer div{
-    height: 5px;
-    width: 40px;
-    background-color: #F8C301;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-#btn-hamburguer.ativo div{
-    display: none;
-}
-#btn-hamburguer.ativo div:first-child{
-    display: block;
-    position: relative;
-    margin: 0;
-    transform: translate(2%, 72%) rotate(225deg);
-    transition: transform 0.3s ease;
-}
-#btn-hamburguer.ativo div:last-child{
-    display: block;
-    position: relative;
-    margin: 0;
-    transform: translateY(-30%) rotate(-225deg);
-    transition: transform 0.3s ease;
-}
 .bfr-entre{
     padding-block: 140px;
     display: flex;
