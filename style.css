@@ -98,11 +98,13 @@ body{
 .frs-pagina{
     height: 800px;
     content: "";
+    position: relative;
     background-image: radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 71px;
     flex-direction: column;
     & #ave-albatroz{
         width: 100%;
@@ -135,6 +137,87 @@ body{
     opacity: 0;
     transform: translateY(100%);
     /* animation: subirAnimacao 1s ease-out forwards; */
+}
+.divisor-box{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: -71px;
+    /* background-color: #000000; */
+    justify-content: center;
+    & img{
+        width: 100%;   
+    }
+}
+.new-cards-box{
+    font-family: Staatliches, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+    & h1{
+        font-size: 2rem;
+        color: #000E7C;
+    }
+    & #card-meio-btn{
+            padding: 24px 26px;
+            font-size: 1.2rem;
+        }
+    .meio{
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+        
+        
+        & .seta{
+            background-color: #000E7C;
+            color: white;
+            padding: 8px 14px;
+        }
+        .pai-card-meio{
+            display: flex;
+            gap: 3vw;
+            & .linha-top{
+            content: "";
+            width: 100%;
+            border-radius: 16px;
+            height: 30px;
+            background-color: rgb(17, 156, 17);
+            }
+        }
+        .enb{
+            display: flex;
+            flex-direction: column;
+            & #lt-estoque{
+                background-color: #000F7E;
+            }
+        }
+        & .card-meio{
+            background-color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            
+            flex-direction: column;
+            top: -12px;
+            position: relative;
+            
+            align-items: center;
+            gap: 12px;
+            padding: 35px 26px;
+            & h1{
+                font-size: 1.45rem;
+                color: rgb(34, 34, 34);
+            }
+            .card-m-ul{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                font-weight: 700;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
 }
 /*   
 @keyframes subirAnimacao {
