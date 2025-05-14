@@ -96,7 +96,7 @@ body{
     /* margin-top: 70px; */
 }
 .frs-pagina{
-    height: 800px;
+    height: 1000px;
     content: "";
     position: relative;
     background-image: radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
@@ -105,6 +105,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 71px;
+    padding-bottom: 55px;
     flex-direction: column;
     & #ave-albatroz{
         width: 100%;
@@ -142,8 +143,7 @@ body{
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: -71px;
-    /* background-color: #000000; */
+    bottom: -73px;
     justify-content: center;
     & img{
         width: 100%;   
@@ -153,6 +153,7 @@ body{
     font-family: Staatliches, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5;
     align-items: center;
     gap: 6vw;
     & h1{
@@ -184,6 +185,7 @@ body{
             height: 30px;
             background-color: rgb(17, 156, 17);
             }
+            
         }
         .enb{
             display: flex;
@@ -194,13 +196,12 @@ body{
         }
         & .card-meio{
             background-color: #ffffff;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             display: flex;
-            
             flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             top: -12px;
             position: relative;
-            
+            border-radius: 0px 0px 16px 16px;
             align-items: center;
             gap: 12px;
             padding: 35px 26px;
