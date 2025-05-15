@@ -700,6 +700,30 @@ body{
         background-color: rgb(0, 29, 54);
     }
 }
+.marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4vw;
+    gap: 4vw;
+    & h1{
+        font-family:  Staatliches, sans-serif;
+        font-size: 1.9rem;
+        color: #000E7C;
+    }
+    & .pai-marcas{
+        display: grid;
+        gap: 4vw;
+        & .marcas-card{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 1rem;
+            & img{
+                width: 200px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1440px){
     .menu {
         margin-inline: 100px 100px;
@@ -783,7 +807,10 @@ body{
     }
     .first-ftr > *:nth-child(4) {
         grid-column: 2 / 3; /* Posiciona o 4º card na coluna do meio */
-      
+    .pai-marcas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     
 }
