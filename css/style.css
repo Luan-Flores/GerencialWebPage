@@ -177,6 +177,7 @@ body{
         & .seta{
             background-color: #1C245A;
             color: white;
+            border-radius: 25px;
             padding: 8px 14px;
         }
         .pai-card-meio{
@@ -784,10 +785,10 @@ body{
         gap: 4vw;
         grid-template-columns: repeat(4, 1fr);
         & .marcas-card{
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 20px;
             border-radius: 1rem;
             & img{
-                width: 200px;
+                width: 165px;
             }
         }
     }
@@ -878,10 +879,15 @@ body{
     .pai-marcas{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    
-    
+    }   
 }
+/* @media screen and (max-width: 991px){
+    .pai-card-meio{
+        display: grid;
+        border: 2px solid red;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
 
 @media screen and (max-width: 768px) {
     #box-btn-hamburguer{
