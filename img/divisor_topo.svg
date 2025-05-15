@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 333">
+  <title>divisor_topo</title>
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <path fill="#FFCA16" d="M0,242H.05C0,217.24,0,203.4,0,242Z"/>
+      <path fill="#FFCA16" d="M1920,242,960,29.16.05,242c0,26.67.06,66,.06,66H1920S1920,161.79,1920,242Z"/>
+      <path fill="#f1f4f5" d="M1920,333l0-333L960,78.66,0,0C0,29.64.11,333,.11,333Z"/>
+    </g>
+  </g>
+</svg>
