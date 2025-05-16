@@ -96,18 +96,32 @@ body{
     /* height: 100vh; */
     /* margin-top: 70px; */
 }
+/* .gio{
+
+  height: 400px;
+  background-image: url('../img/divisor_topo.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-color: red;
+} */
 .frs-pagina{
-    height: 1000px;
-    content: "";
     position: relative;
-    background-image: radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 71px;
-    padding-bottom: 55px;
     flex-direction: column;
+
+    /* fundo com degradê + imagem de divisória no final */
+    background-image:
+    url('../img/divisor_topo.svg'),
+    radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center top;
+    background-size: 100% auto, cover;
+
+    padding-block: 5vw 19vw;
     & #ave-albatroz{
         width: 100%;
         height: auto;
@@ -312,8 +326,8 @@ body{
   .ave-box.visivel {
     opacity: 1;
     transform: translateY(0);
-    width: 73%;
-    max-width: 1575px;
+    width: 65%;
+    max-width: 1325px;
   }
   .ave-title{
       opacity: 0;
@@ -702,6 +716,15 @@ body{
     text-align: center;
     color: #3b3b3b;
 } */
+#giovani{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
 .bfr-ftr{
     background-color: #1c245a;
     display: flex;
@@ -858,6 +881,7 @@ body{
 
     }
     .frs-pagina {
+        
         & .ave-title {
             & h1 {
                 font-size: 45px;
@@ -868,6 +892,7 @@ body{
                 gap: 8px;
             }
         }
+        
     }
     /* .first-ftr{
         display: grid;
