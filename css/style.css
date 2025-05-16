@@ -119,9 +119,9 @@ body{
     radial-gradient(circle, #ffffff, #e4e4fe, #c3cbfe, #98b4ff, #57a0ff);
     background-repeat: no-repeat, no-repeat;
     background-position: bottom center, center top;
-    background-size: 100% auto, cover;
+    background-size: 101% auto, auto;
 
-    padding-block: 5vw 19vw;
+    padding-block: 9vw 21vw;
     & #ave-albatroz{
         width: 100%;
         height: auto;
@@ -140,7 +140,7 @@ body{
             gap: 8px;
             & strong{
                 color: #000f7e;
-                font-weight: 780;
+                font-weight: 700;
             }
         }
         & p{
@@ -164,8 +164,14 @@ body{
         width: 100%;   
     }
 }
+
 #divisor-corpo{
     background-color: #1c245a;
+    /* background-image: url(../img/Divisor_corpo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 140px;
+    width: 100%; */
 }
 .new-cards-box{
     font-family: Staatliches, sans-serif;
@@ -173,10 +179,11 @@ body{
     flex-direction: column;
     background-color: #F1F4F5;
     align-items: center;
-    gap: 6vw;
+    gap: 2vw;
     & h1{
         font-size: 2rem;
         color: #1C245A;
+        font-weight: 300;
     }
     & #card-meio-btn{
             padding: 24px 26px;
@@ -645,86 +652,6 @@ body{
     border: 1px solid #b6b5b5;
     
 }
-/* footer{
-    height: 385px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* }
-.container-ftr{
-    margin-inline: 15%;
-}
-.first-ftr{
-    display: flex;
-    padding-block: 5rem;
-    justify-content: center;
-    gap: 2vh;
-}
-.ftr-box{
-    width: 12rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 6%;
-    & h3{
-        font-size: 23px;
-        line-height: 48px;
-        text-align: center;
-    }
-    & p{
-        font-size: 0.9rem;
-        margin-top: 4%;
-        text-align: center;
-    }
-}
-.ftr-box-fake{
-    display: none;
-}
-.box-logo-ftr{
-    width: 70%;
-    & .logo-ftr{
-        width: 100%;
-    }
-}
-#h3-redes{
-    text-align: center;
-}
-.ftr-box1{
-    display: flex;
-    align-items: center;
-}
-.ftr-box-3-a{
-    & p{
-        color: #000000;
-    }
-}
-.box-redes{
-    display: flex;
-    justify-content: center;
-    gap: 12%;
-    & .logo-rede{
-        width: 25px;
-        height: 25px;
-    }
-    & .logo-rede-a{
-        height: 25px;
-    }
-}
-.copy{
-    border-top: 1px solid #a0a0a0;
-    padding-block: 3rem;
-    text-align: center;
-    color: #3b3b3b;
-} */
-#giovani{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    pointer-events: none;
-}
 .bfr-ftr{
     background-color: #1c245a;
     display: flex;
@@ -801,6 +728,7 @@ body{
     & h1{
         font-family:  Staatliches, sans-serif;
         font-size: 1.9rem;
+        font-weight: 300;
         color: #000E7C;
     }
     & .pai-marcas{
@@ -881,7 +809,7 @@ body{
 
     }
     .frs-pagina {
-        
+        background-size: 101% auto, auto;
         & .ave-title {
             & h1 {
                 font-size: 45px;
