@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
-    <title>Gerencial Informática</title>
     <script defer src="js/template-loader.js"></script>
+    <script defer src="js/slider.js"></script>
+    <title>Gerencial Informática</title>
     <link rel="stylesheet" href="css/footer-template-css.css">
     <link rel="stylesheet" href="css/header-template-css.css">
     <link rel="icon" type="image/x-icon" href="img/Logo Geométrico com Letra _G_.png">
@@ -28,28 +29,29 @@
                     Quero conhecer
                 </button>
             </div>
-          
+            
         </div>
-        <section class="new-cards-box">
+        <section class="new-cards-box" id="sec-carousel">
             <h1 id="h1-conheca">Conheça as funcionalidades do Albatroz</h1>
-            <div class="card-pai">
-                <div class="meio">
-                    <div class="seta"><</div>
-                    
-                    
-                    <div class="pai-card-meio">
-                        <div class="enb">
+
+                <div class="meio"> <!-- card-wrapper -->
+                    <div class="nav nav-left">
+                <button><</button>
+            </div>
+                    <div class="pai-card-meio" class="carousel-content"> <!-- card-list -->
+                        <div class="enb" class="slide" class="slide">  <!-- card-item -->
                             <div class="linha-top" id="lt-dfe"></div>
                             <div class="card-meio">
                                 <h1>EMISSAO DE DF-e</h1>
                                 <ul class="card-m-ul">
-                                    <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+                                    <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li> <!-- card-item -->
                                     <li>Envio facilitado ao cliente</li>
                                     <li>Integração com a SEFAZ</li>
                                 </ul>
+                                <button class="btn-card"></button>
                             </div>
                         </div><!--emb-->
-                        <div class="enb">
+                        <div class="enb" class="slide">
                             <div class="linha-top" id="lt-estoque"></div>
                             <div class="card-meio">
                                 <h1>ESTOQUE</h1>
@@ -58,9 +60,10 @@
                                     <li>Envio facilitado ao cliente</li>
                                     <li>Integração com a SEFAZ</li>
                                 </ul>
+                                <button class="btn-card"></button>
                             </div>
                         </div><!--emb-->
-                        <div class="enb">
+                        <div class="enb" class="slide">
                             <div class="linha-top" id="lt-financeiro"></div>
                             <div class="card-meio">
                                 <h1>VENDAS E NFC-e</h1>
@@ -69,151 +72,62 @@
                                     <li>Envio facilitado ao cliente</li>
                                     <li>Integração com a SEFAZ</li>
                                 </ul>
+                                <button class="btn-card"></button>
                             </div>
                         </div><!--emb-->
-                        
+                        <div class="enb" class="slide">
+                            <div class="linha-top" id="lt-financeiro"></div>
+                            <div class="card-meio">
+                                <h1>VENDAS E NFC-e</h1>
+                                <ul class="card-m-ul">
+                                    <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+                                    <li>Envio facilitado ao cliente</li>
+                                    <li>Integração com a SEFAZ</li>
+                                </ul>
+                                <button class="btn-card"></button>
+                            </div>
+                        </div><!--emb-->
+                        <div class="enb" class="slide">
+                            <div class="linha-top" id="lt-financeiro"></div>
+                            <div class="card-meio">
+                                <h1>VENDAS E NFC-e</h1>
+                                <ul class="card-m-ul">
+                                    <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+                                    <li>Envio facilitado ao cliente</li>
+                                    <li>Integração com a SEFAZ</li>
+                                </ul>
+                                <button class="btn-card"></button>
+                            </div>
+                        </div><!--emb-->
                         <!--cardmeio--></div>
-                        <div class="seta">></div>
+                        <div class="nav nav-right">
+                            <button>></button>
+                        </div>
                     </div>
-                </div>
-                <button class="btn-agendar" id="card-meio-btn">Ver Mais</button>
+                    
+                
+                <!-- <button class="btn-agendar" id="card-meio-btn">Ver Mais</button> -->
             </section>
             <div id="divisor-corpo">
                 <img src="img/Divisor_corpo.svg" alt="a">
             </div>
             
-            <!-- <section class="sec-suporte">
-                <div class="sup-box">
-                    <div class="sup-box-um">
-                        <h1>Nosso suporte é preparado para solucionar suas dúvidas</h1>
-                        <p>Estamos à disposição para treinamentos nos nossos canais de atendimento</p>
-                    </div>
-                    <div class="sup-box-dois">
-                        <div class="sup-card-box">
-                        <div class="sup-card1">
-                            <p>Canais de atendimento</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- <div class="bfr-entre">
-            <div class="bfr-entre-box1">
-                <h1>O Sistema Albatroz desbloqueia o seu negócio</h1>
-                <p>O ERP que reduz custos e otimiza o tempo da sua empresa</p>
-                <ul class="bfr-entre-ul">
-                    <li class="brf-entre-li">DF-e</li>
-                    <li class="brf-entre-li">Financeiro</li>
-                    <li class="brf-entre-li">Estoque</li>
-                    <li class="brf-entre-li">Vendas</li>
-                    <a href="info.html" id="a-vermais">
-                        <li class="brf-entre-li">Ver Mais</li>
-                    </a>
-                </ul>
-            </div>
             
-            <div class="linha-centro"></div>
-            <div class="bfr-entre-box2">
-                <h1>Agende uma demonstração agora mesmo</h1>
-                <p>Conheça o nosso sistema e suas funcionalidades em tempo real</p>
-                <button class="btn-agendar" id="bfr-entre-btn">Agendar</button>
-            </div>
-
-         </div>
-        <div class="second-page">
-            <div class="card-box">
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi">
-                            <img src="img/icon-dfe.png" alt="" class="icon-card">
-                            <h3 class="titleCard" id="nfe-card">Emissão de DF-e</h3>
+            <section class="faixaMain">
+                <h1>Sua empresa merece o melhor</h1>
+                <div class="bolasCtn">
+                    <div class="bolas">
+                        <img src="img/dollar.png" alt="">
+                        <div class="textosBola">
+                            <h3>20</h3>
+                            <p>ANOS</p>
                         </div>
                     </div>
-                    <sub class="strCard">Integração com a SEFAZ para Emissão de Nota Fiscal Eletrônica (NF-e, NFS-e, NFC-e, MDF-e, CT-e), envio facilitado das notas fiscais eletrônicas ao cliente.
-                    </sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi">
-                            <img src="img/icon-estoque.png" alt="" class="icon-card">
-                            <h3 class="titleCard" id="estoque-card">Estoque</h3>
-                        </div>
-                    </div>
-                    <sub class="strCard">Gerencie com precisão o controle de produtos, acompanhando entradas, saídas, níveis de inventário e movimentações em tempo real, tudo em um só sistema.</sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi">
-                            <img src="img/icon-financeiro.png" alt="" class="icon-card">
-                            <h3 class="titleCard" id="financ-card">Financeiro</h3>
-                        </div>
-                    </div>
-                    <sub class="strCard">Gerencie seu planejamento financeiro com eficiência, centralizando conta corrente, fluxo de caixa, relatórios diários e conciliação automática em uma única plataforma.</sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi">
-                            <img src="img/icon-dfe.png" alt="" class="icon-card">
-                            <h3 class="titleCard" id="serv-card">Serviços e NFS-e</h3>
-                        </div>
-                        </div>
-                    <sub class="strCard">Organize a gestão dos serviços prestados e emita notas fiscais eletrônicas de forma prática, rápida e integrada ao sistema.</sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi">
-                            <img src="img/icon-vendas.png" alt="" class="icon-card">
-                            <h3 class="titleCard">Vendas e NF-e</h3>
-                        </div>
-                    </div>
-                    <sub class="strCard">Controle das suas vendas, transferências, orçamentos, devoluções, entre outros recursos. Com gerenciador de NF-e facilitado e integrado à SEFAZ.</sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="box-frs">
-                        <div class="box-frs-fi"><img src="img/icon-crm.png" alt="" class="icon-card">
-                            <h3 class="titleCard" id="crm-card">CRM</h3>
-                        </div>
-                    </div>
-                    <sub class="strCard">Monitore seu negócio de forma eficiente, com dados de clientes, compras e vendas sempre atualizados automaticamente no sistema.</sub>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                    <a href="info.html" class="a-btn-func">
-                        <button class="btn-agendar" id="btn-func">Ver mais</button>
-                    </a>
-                </div>
-            </div>
-        </div> -->
-        <section class="faixaMain">
-            <h1>Sua empresa merece o melhor</h1>
-        <div class="bolasCtn">
-            <div class="bolas">
-                <img src="img/dollar.png" alt="">
-                <div class="textosBola">
-                    <h3>20</h3>
-                    <p>ANOS</p>
-                </div>
-            </div>
-            <div class="bolas">
-                <img src="img/hand-shake.png" alt="">
-                
-                <div class="textosBola">
-                    <h3>+100</h3>
+                    <div class="bolas">
+                        <img src="img/hand-shake.png" alt="">
+                        
+                        <div class="textosBola">
+                            <h3>+100</h3>
                     <p>CLIENTES</p>
                 </div>
             </div>
@@ -259,61 +173,7 @@
             <button class="bfr-ftr-btn">Contato WhatsApp</button>
         </div>
     </section>
-    <!-- <footer>
-        <section class="container-ftr">
-            <div class="first-ftr">
-                <div class="ftr-box1 ftr-box">
-                    <div class="box-logo-ftr">
-                        <img src="./img/LogoGerencialNovoAzul.png" alt="Logo Gerencial Informática" class="logo-ftr">
-                    </div>
-                    <div class="box-horario-ftr">
-                        <p><strong>Horário de atendimento:</strong></p>
-                        <p>Seg. a Sex. das 7:30h às 18h</p>
-                        <p>Sábado das 8h às 12h</p>
-                    </div>
-                </div>
-                <div class="ftr-box2 ftr-box">
-                    <h3>Contato</h3>
-                    <p><strong>Email:</strong><br>francisco@gerencialinfo.com.br</p>
-                    <p><strong>Contato:</strong><br>(67)3316-0200 <br>(67)98119-0011</p>
-                    <p><strong>Endereço:</strong><br>Rua Treze de Junho, 38, Centro</p>
-                </div>
-                <div class="ftr-box3 ftr-box">
-                    <h3>Mapa do site</h3>
-                    <a href="index.html" class="ftr-box-3-a">
-                        <p><strong>Início</strong></p>
-                    </a>
-                    <a href="index.html" class="ftr-box-3-a">
-                        <p><strong>Albatroz</strong></p>
-                    </a>
-                    <a href="index.html" class="ftr-box-3-a">
-                        <p><strong>Serviços</strong></p>
-                    </a>
-                    <a href="index.html" class="ftr-box-3-a">
-                        <p><strong>Contato</strong></p>
-                    </a>
-
-                </div>
-                <div class="ftr-box4 ftr-box">
-                    <h3 id="h3-redes">Redes Sociais</h3>
-                    <div class="box-redes">
-                        <a href="https://www.linkedin.com/company/gerencialinformatica" class="logo-rede-a">
-                            <img src="./img/logo-linkedin.png" alt="Logo do Linkedin" class="logo-rede">
-                        </a>
-                        <a href="https://www.facebook.com/Gerencial.Informatica.CG" class="logo-rede-a">
-                            <img src="./img/logoFacebook.png" alt="Logo do Facebook" class="logo-rede">
-                        </a>
-                        <a href="https://www.youtube.com/@gerencialinformatica1963" class="logo-rede-a">
-                            <img src="./img/logoYoutube.png" alt="Logo do Youtube" class="logo-rede">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="copy">
-                <p>2025 © Gerencial Informática. Todos os direitos reservados. </p>
-            </div>
-        </section>
-    </footer> -->
+    
     <footer id="footer"></footer>
 </body>
 </html>

@@ -5,6 +5,27 @@
     list-style: none;
     text-decoration: none;
 }
+/* Parte da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra */
+}
+
+/* Fundo da barra (trilho) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Cor do "thumb" (parte que se move) */
+::-webkit-scrollbar-thumb {
+  background: #57a0ff; /* azul */
+  border-radius: 6px;
+}
+
+/* Hover no thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a76d2;
+}
+
 header{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -39,8 +60,7 @@ header{
             align-items: center;
             gap: 3vw;
             transform: scale(1);
-            /* font-size: 1.52vw; */
-            font-size: 1.32vw;
+            font-size: clamp(16px, 1.72vw, 45px);
             letter-spacing: 2px;
             color: rgb(31 62 119);
             
