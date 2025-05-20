@@ -17,13 +17,13 @@
 
 /* Cor do "thumb" (parte que se move) */
 ::-webkit-scrollbar-thumb {
-  background: #57a0ff; /* azul */
-  border-radius: 6px;
+    background: #1C245A;
+    border-radius: 6px;
 }
 
 /* Hover no thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a76d2;
+    background: #1c2a86;
 }
 
 header{

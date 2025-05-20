@@ -3,35 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container swiper">
-        <div class="card-wrapper">
-            <div class="card-list swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="linha-top" id="lt-dfe"></div>
-                <div class="card-meio">
-                    <h1>EMISSAO DE DF-e</h1>
-                    <ul class="card-m-ul">
-                        <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
-                    <li>Envio facilitado ao cliente</li>
-                    <li>Integração com a SEFAZ</li>
-                </ul>
-                <button class="btn-card"></button>
-            </div>
+    <div class="carousel-container">
+    <button class="nav-carousel prev" onclick="scrollCarousel(-1)">❮</button>
+
+  <div class="carousel" id="carousel">
+    
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    <div class="card-carousel">
+        <div class="card-meio">
+            <h1>EMISSAO DE DF-e</h1>
+            <ul class="card-m-ul">
+                <li>Nf-e, NFS-e, NFC-e, MDF-e, CT-e</li>
+            <li>Envio facilitado ao cliente</li>
+            <li>Integração com a SEFAZ</li>
+        </ul>
+        </div>
+    </div>
+    
+    <!-- Adicione mais cards aqui -->
+  </div>
+
+  <button class="nav-carousel next" onclick="scrollCarousel(1)">❯</button>
 </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </body>
-    <script>
-        new Swiper('.card-wrapper', {
-            loop: true,
-        })
-    </script>
+<script>
+    function scrollCarousel(direction) {
+  const container = document.getElementById('carousel');
+  const card = container.querySelector('.card-carousel');
+  const scrollAmount = card.offsetWidth + 16; // 16 = gap
+
+  container.scrollBy({
+    left: direction * scrollAmount * 1,
+    behavior: 'smooth'
+  });
+}
+
+</script>
 </html>
