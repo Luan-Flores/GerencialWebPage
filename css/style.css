@@ -195,12 +195,30 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#card-dfe{
+    border-color: #1586ff;
+}
+#card-estoque{
+    border-color: #ffca16;
+}
+#card-financeiro{
+    border-color: #00bf08;
+}
+#card-vendas{
+    border-color: #ff8a00;
+}
+#card-compras{
+    border-color: #1A67BF;
+}
+#card-adm{
+    border-color: #03a4ad;
+}
 
 .carousel {
   display: flex;
   gap: 16px;
   width: 65%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -336,6 +354,36 @@ body{
                 position: absolute;
                 top: 12px;
             }
+        }
+    }
+}
+.suporte{
+    display: flex;
+    /* padding-block: 30px; */
+    justify-content: center;
+    background-color: rgb(133, 131, 131);
+    align-items: center;
+    & .sup-1{
+        display: flex;
+        width: 50%;
+        padding-block: 40px;
+        justify-content: center;
+        & img{
+            width: 79px;
+        }
+        & p{
+            width: 80%;
+        }
+    }
+    & .sup-2{
+        justify-content: center;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding-block: 40px;
+        background-color: #241f3f;
+        & #icon-fone{
+            width: 50px;
         }
     }
 }
