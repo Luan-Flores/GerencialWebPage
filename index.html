@@ -176,6 +176,26 @@
             <div class="marcas-setas">< ></div>
             <button class="btn-agendar">Quero fazer parte</button>
         </section>
+        teste
+    <div class="carrossel">
+  <button class="anterior">⟨</button>
+  
+  <div class="faixa-container">
+    <div class="faixa">
+      <img src="img/coldlinebrasil_logo.jpg" class="item-carrossel">
+      <img src="img/capitalLOGO.png" class="item-carrossel">
+      <img src="img/g5LOGO.png" class="item-carrossel" width="200px">
+      <img src="img/coldlinebrasil_logo.jpg" class="item-carrossel">
+      <img src="img/capitalLOGO.png" class="item-carrossel">
+      <img src="img/g5LOGO.png" class="item-carrossel" width="200px">
+      <img src="img/coldlinebrasil_logo.jpg" class="item-carrossel">
+      <img src="img/capitalLOGO.png" class="item-carrossel">
+      <img src="img/g5LOGO.png" class="item-carrossel" width="200px">
+    </div>
+  </div>
+  <button class="proximo">⟩</button>
+</div>
+teste
         <div class="bfr-ftr">
             <h1>Agende uma demonstração agora mesmo ou fale conosco pelo WhatsApp</h1>
             <h3>Prepare a sua empresa com o sistema de gestão que otimiza o seu negócio</h3>
@@ -185,4 +205,38 @@
     
     <footer id="footer"></footer>
 </body>
+<script>
+    const faixa = document.querySelector('.faixa');
+const botaoAnterior = document.querySelector('.anterior');
+const botaoProximo = document.querySelector('.proximo');
+
+const larguraItem = 200; // largura de cada imagem
+const itensVisiveis = 4; // quantidade visível
+const totalItens = document.querySelectorAll('.item-carrossel').length;
+
+let posicaoAtual = 0;
+
+botaoAnterior.addEventListener('click', () => {
+  posicaoAtual--;
+  if (posicaoAtual < 0) {
+    posicaoAtual = totalItens - itensVisiveis;
+  }
+  atualizarCarrossel();
+});
+
+botaoProximo.addEventListener('click', () => {
+  posicaoAtual++;
+  if (posicaoAtual > totalItens - itensVisiveis) {
+    posicaoAtual = 0;
+  }
+  atualizarCarrossel();
+});
+
+function atualizarCarrossel() {
+  const novoTransform = -posicaoAtual * larguraItem;
+  faixa.style.transform = `translateX(${novoTransform}px)`;
+}
+
+</script>
+
 </html>

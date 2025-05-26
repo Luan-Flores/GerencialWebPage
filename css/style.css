@@ -288,21 +288,47 @@ body{
     }
 }
 
-.nav-carousel {
+.carrossel {
+  position: relative;
+    overflow: hidden;
+    background-color: #00073f;
+    padding-block: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faixa-container {
+    overflow: hidden;
+    background-color: azure;
+    display: flex;
+    width: 79%;
+}
+
+.faixa {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+}
+
+.item-carrossel {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+button.anterior, button.proximo {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #333;
+  background: rgba(0,0,0,0.5);
   color: white;
   border: none;
-  padding: 12px;
-  border-radius: 50%;
+  padding: 10px;
   cursor: pointer;
-  z-index: 1;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+button.anterior { left: 10px; }
+button.proximo { right: 10px; }
 
 
 .faixaMain{
