@@ -395,7 +395,7 @@ button.proximo { right: 10px; }
         & .aba-1{
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 60%;
             gap: 20px;
             & h1{
                 border: 0px solid #FFC300;
@@ -413,13 +413,37 @@ button.proximo { right: 10px; }
             }
             & .ctt{
                 display: flex;
-                gap: 2%;
+                gap: 7%;
+                width: 60%;
+                justify-content: center;
                 & img{
                     width: 32px;
-                    border: solid #FFC300;
-                    border-width: 0px 0px 4px 0px;
+                }
+                & .a-ctt{
+                    & .a-ctt-border{
+                        border: 2px solid #FFC300;
+                    }
                 }
             }   
+        }
+        & .aba-2{
+            display: flex;
+            flex-direction: column;
+            & h1{
+                font-size: 32px;
+                border-bottom: 2px solid;
+                color: #1c245a;
+            }
+            & .serv-ul{
+                & .serv-itens{
+                    display: flex;
+                    gap: 12px;
+                    & img{
+                        width: 43px;
+                        height: fit-content;
+                    }
+                }
+            }
         }
         
     }
