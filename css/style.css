@@ -429,18 +429,32 @@ button.proximo { right: 10px; }
         & .aba-2{
             display: flex;
             flex-direction: column;
+            gap: 10%;
             & h1{
                 font-size: 32px;
-                border-bottom: 2px solid;
+                border-bottom: 2px solid #FFC300;  
                 color: #1c245a;
+                width: fit-content;
+                border-width: 6px;
             }
             & .serv-ul{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
                 & .serv-itens{
                     display: flex;
                     gap: 12px;
-                    & img{
-                        width: 43px;
-                        height: fit-content;
+                    align-items: center;
+                    & .serv-icon-box{
+                        display: flex;
+                        width: 49px;
+                        justify-content: center;
+                        & img{
+                            width: 100%;
+                        }
+                        & #assistAZUL{
+                            width: 80%;
+                        }
                     }
                 }
             }
