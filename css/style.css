@@ -292,29 +292,48 @@ body{
 .carrossel {
   position: relative;
     overflow: hidden;
-    background-color: #00073f;
+    background-color: #f7f7f7;
     padding-block: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-
+.emp-logos{
+    background-color: #f7f7f7;
+    display: flex;
+    padding-block: 4vw;
+    flex-direction: column;
+    align-items: center;
+    & h1{
+        font-family: Staatliches, sans-serif;
+        font-size: 1.9rem;
+        font-weight: 300;
+        color: #000E7C;
+    }
+}
 .faixa-container {
     overflow: hidden;
-    background-color: azure;
+    background-color: #f7f7f7;
     display: flex;
-    width: 79%;
+    width: 60%;
 }
 
 .faixa {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 20px;
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 62px;
+    padding-block: 2%;
+    padding-inline: 2%;
+    background-color: #f7f7f7;
 }
 
 .item-carrossel {
-  width: 200px;
-  flex-shrink: 0;
+    width: 200px;
+    flex-shrink: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 20px;
+    border-radius: 1rem;
 }
 
 button.anterior, button.proximo {
@@ -328,8 +347,8 @@ button.anterior, button.proximo {
   cursor: pointer;
 }
 
-button.anterior { left: 10px; }
-button.proximo { right: 10px; }
+button.anterior { left: 5%; }
+button.proximo { right: 5%; }
 
 
 .faixaMain{
