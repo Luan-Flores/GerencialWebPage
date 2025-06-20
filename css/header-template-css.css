@@ -145,7 +145,7 @@ header{
         display: flex;
     }
     .pai-box{
-        gap: 43vw;
+        gap: 13vw;      
         & .hdr-box-logo{
             width: 210px;
         }

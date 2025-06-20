@@ -308,6 +308,7 @@ body{
     & h1{
         font-family: Staatliches, sans-serif;
         font-size: 1.9rem;
+        text-align: center;
         font-weight: 300;
         color: #000E7C;
     }
@@ -330,6 +331,7 @@ body{
 
 .item-carrossel {
     width: 200px;
+    height: 90%;
     flex-shrink: 0;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 20px;
@@ -369,6 +371,8 @@ button.proximo { right: 5%; }
     & .bolasCtn{
         display: flex;
         gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
         & .bolas{
             border: 3px solid #FFCA16;
             padding: 4.27rem 4.54rem;
@@ -860,11 +864,11 @@ button.proximo { right: 5%; }
     background-color: #1c245a;
     display: flex;
     /* height: 65vh; */
-    padding: 120px 0px;
+    padding: 105px 0px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     text-align: center;
     & h1{
         color: #f9ff00;
@@ -1027,6 +1031,10 @@ button.proximo { right: 5%; }
         }
         
     }
+    #conheca-func{
+        font-size: 3vw;
+        bottom: 6vw;
+    }
     /* .first-ftr{
         display: grid;
         align-items: start;
@@ -1061,6 +1069,9 @@ button.proximo { right: 5%; }
     display: flex;
     flex-direction: row;
     align-items: center;
+    }
+    .bolasCtn{
+        width: calc(50% - 8px);
     }
     .first-img-box{
         & img{
@@ -1130,6 +1141,9 @@ button.proximo { right: 5%; }
     #box-btn-hamburguer{
         display: block;
         margin: 0;
+    }
+    .faixa{
+        padding-inline: 10%;
     }
     .entre{
 
