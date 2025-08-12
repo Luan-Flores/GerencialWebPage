@@ -1011,8 +1011,12 @@ button.proximo {
 			text-align: center;
 		}
 	}
-	.card-box {
-		grid-template-columns: repeat(2, 1fr);
+	.gerencial-info {
+		& .wrapper-g {
+			& .aba-1 {
+				padding-left: 2%;
+			}
+		}
 	}
 	.frs-pagina {
 		background-size: 101% auto, auto;
@@ -1137,6 +1141,34 @@ button.proximo {
 	#box-btn-hamburguer {
 		display: block;
 		margin: 0;
+	}
+	.gerencial-info {
+		& .wrapper-g {
+			flex-direction: column;
+			gap: 50px;
+			align-items: center;
+			& .aba-1 {
+				text-align: center;
+				align-items: center;
+				width: 100%;
+				padding-left: 0;
+				& p {
+					width: 88%;
+				}
+				& h1 {
+					padding-left: 0;
+
+					width: 97%;
+				}
+			}
+			& .aba-2 {
+				align-items: center;
+				gap: 25px;
+				& .serv-ul {
+					padding-left: 30px;
+				}
+			}
+		}
 	}
 	.faixa {
 		padding-inline: 10%;
