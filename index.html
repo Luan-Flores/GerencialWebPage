@@ -141,7 +141,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="gerencial-info">
+			<section class="gerencial-info" id="gerencial-info">
 				<div class="wrapper-g">
 					<div class="aba-1">
 						<h1>Sobre a <br />Gerencial Informática</h1>
@@ -275,7 +275,7 @@
 					Prepare a sua empresa com o sistema de gestão que otimiza o seu
 					negócio
 				</h3>
-				<button class="bfr-ftr-btn">Contato WhatsApp</button>
+				<button id="btnWhatsapp" class="bfr-ftr-btn">Contato WhatsApp</button>
 			</div>
 		</section>
 
@@ -312,5 +312,15 @@
 			const novoTransform = -posicaoAtual * larguraItem;
 			faixa.style.transform = `translateX(${novoTransform}px)`;
 		}
+		document
+			.getElementById("btnWhatsapp")
+			.addEventListener("click", function () {
+				const numero = "5567993072458"; // Formato internacional
+				const mensagem = encodeURIComponent(
+					"Olá, quero mais informações sobre o sistema Albatroz"
+				);
+				const url = `https://wa.me/${numero}?text=${mensagem}`;
+				window.open(url, "_blank");
+			});
 	</script>
 </html>
