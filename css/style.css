@@ -179,7 +179,7 @@ body {
 }
 #conheca-func {
 	position: absolute;
-	bottom: 70px;
+	bottom: 4vw;
 	color: #1c245a;
 	font-size: 41px;
 	& strong {
@@ -895,6 +895,110 @@ button.proximo {
 		}
 	}
 }
+
+.albatroz-features {
+	background-color: #f1f4f5;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #121f45;
+	margin-bottom: 40px;
+}
+
+/* Container dos cards: O Slider */
+.cards-container {
+	display: flex;
+	flex-wrap: nowrap; /* CRUCIAL: Impede que os cards quebrem a linha */
+	overflow-x: auto; /* CRUCIAL: Adiciona a barra de scroll horizontal */
+	gap: 20px; /* Espaço entre os cards */
+	padding-bottom: 20px; /* Espaço para a barra de scroll */
+	-webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos iOS */
+	/* Removemos as linhas que escondiam a barra de rolagem, como: */
+	/* scrollbar-width: none; */
+	/* -ms-overflow-style: none; */
+}
+
+/* Também removemos o trecho que escondia a barra de rolagem no Webkit: */
+/* .cards-container::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Estilos para a barra de rolagem para navegadores Webkit (Chrome, Safari) */
+.cards-container::-webkit-scrollbar {
+	height: 8px; /* Altura da barra de rolagem */
+}
+
+.cards-container::-webkit-scrollbar-track {
+	background: #e0e0e0; /* Cor de fundo da trilha */
+	border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+	background: #121f45; /* Cor do "puxador" da barra de rolagem */
+	border-radius: 4px;
+}
+
+/* Estilos para os cards */
+.card {
+	flex: 0 0 calc(33.333% - 14px);
+	min-width: 300px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Estilos de cor de borda conforme a imagem */
+.card-blue {
+	border-top: 10px solid #007bff;
+}
+.card-yellow {
+	border-top: 10px solid #ffc107;
+}
+.card-green {
+	border-top: 10px solid #28a745;
+}
+
+.card h3 {
+	font-size: 1.5rem;
+	color: #121f45;
+	margin-bottom: 10px;
+}
+.card p {
+	color: #6c757d;
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+/* Estilo do botão "VER MAIS" */
+.btn-more {
+	display: block;
+	width: 200px;
+	margin: 30px auto 0;
+	padding: 15px 30px;
+	background-color: #00077e;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 11px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+	background-color: #0d162a;
+}
+
 .nav-list.ativo {
 	justify-content: center;
 	align-items: center;
@@ -1032,8 +1136,8 @@ button.proximo {
 		}
 	}
 	#conheca-func {
-		font-size: 3vw;
-		bottom: 6vw;
+		font-size: 3.2vw;
+		bottom: 0;
 	}
 	/* .first-ftr{
         display: grid;
@@ -1083,6 +1187,15 @@ button.proximo {
 			/* object-fit: cover; */
 		}
 	}
+	#conheca-func {
+		font-size: 4.2vw;
+		bottom: -5vw;
+		width: 90%;
+		text-align: center;
+	}
+	.albatroz-features {
+		padding-block: 13vw 2vw;
+	}
 	.cabecalho {
 		display: flex;
 		align-items: center;
@@ -1108,6 +1221,34 @@ button.proximo {
 
 	.box-btn-agendar {
 		display: none;
+	}
+	.gerencial-info {
+		gap: 50px;
+		& .wrapper-g {
+			flex-direction: column;
+			gap: 65px;
+			align-items: center;
+			& .aba-1 {
+				text-align: center;
+				align-items: center;
+				width: 100%;
+				padding-left: 0;
+				& p {
+					width: 88%;
+				}
+				& h1 {
+					padding-left: 0;
+					width: 58%;
+				}
+			}
+			& .aba-2 {
+				align-items: center;
+				gap: 25px;
+				& .serv-ul {
+					padding-left: 30px;
+				}
+			}
+		}
 	}
 	.frs-pagina {
 		gap: 85px;
@@ -1142,33 +1283,14 @@ button.proximo {
 		display: block;
 		margin: 0;
 	}
-	.gerencial-info {
-		& .wrapper-g {
-			flex-direction: column;
-			gap: 50px;
-			align-items: center;
-			& .aba-1 {
-				text-align: center;
-				align-items: center;
-				width: 100%;
-				padding-left: 0;
-				& p {
-					width: 88%;
-				}
-				& h1 {
-					padding-left: 0;
-
-					width: 97%;
-				}
-			}
-			& .aba-2 {
-				align-items: center;
-				gap: 25px;
-				& .serv-ul {
-					padding-left: 30px;
-				}
-			}
-		}
+	.albatroz-features {
+		padding-block: 30vw 10vw;
+	}
+	#conheca-func {
+		font-size: 6vw;
+		width: 90%;
+		text-align: center;
+		bottom: -23vw;
 	}
 	.faixa {
 		padding-inline: 10%;
